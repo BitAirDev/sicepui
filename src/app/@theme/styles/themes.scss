@@ -1,0 +1,129 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+// which themes you what to enable (empty to enable all)
+$nb-enabled-themes: (corporate);
+$nb-themes: nb-register-theme(( // app wise variables for each theme
+sidebar-header-gap: 2rem, 
+sidebar-header-height: initial, 
+layout-content-width: 1400px,
+
+font-main: Roboto, 
+font-secondary: Exo, 
+
+switcher-background: #2b2d34, 
+switcher-background-percentage: 14%, 
+drops-icon-line-gadient: -webkit-linear-gradient(#e9e8eb, #a7a2be),
+
+slide-out-container-width: 35%,
+slide-out-background: 	linear-gradient(270deg, #fff 0%, #fff 100%),
+slide-out-shadow-color: 0 4px 14px 0 #74d6e7,
+slide-out-shadow-color-rtl: 0 4px 14px 0 #74d6e7,
+
+scrollbar-width: 8px,
+scrollbar-thumb-radius: 4px,
+scrollbar-fg: rgba(71,87,120,0.4),
+), corporate, corporate);
+
+
+.inner-ionic {
+  font-size: 2.5rem !important;
+  margin-top: -6px !important;
+  margin-bottom: -5px !important;
+}
+
+.inner-awesome {
+  font-size: 1.85rem !important;
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+.inner-nebular {
+  font-size: 2.3rem !important;
+  margin-top: -6px !important;
+  margin-bottom: -5px !important;
+}
+
+.table-display-icon {
+  width: 30px !important;
+  margin-top: -11px;
+  margin-bottom: -11px;
+  margin-left: 5px;
+}
+
+//Acciones de Tabla más pequeño
+ng2-smart-table .ng2-smart-actions {
+  width: 99px;
+}
+
+/*Modificaciones a card para ser el header y el footer de Card más pequeño*/
+
+nb-card {
+  margin-bottom: 0rem !important;
+  nb-card-header {
+    padding: 0.5rem !important;
+  }
+  nb-card-header>span {
+    line-height: 1.5rem !important
+  }
+  nb-card-footer {
+    padding: 0.5rem !important;
+  }
+  nb-card-footer>span {
+    line-height: 1.5rem !important
+  }
+  nb-card-body {
+    padding: 0.5rem !important;
+  }
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+.dangerPill {
+  background: #ff2323;
+}
+
+.okPill {
+  background: #2ee56b;
+}
+
+.blankPill {
+  background: #fff;
+}
+
+.warningPill {
+  background: #ffe600;
+}
+
+nb-route-tabset {
+  ul {
+    margin-bottom: 10px !important;
+  }
+}
+
+/*Menú contextual similar al que esta en el header*/
+.ngx-contextmenu .dropdown-menu {
+  border: 2px solid #73a1ff !important;
+  border-radius: 4px !important;
+  background-color: #fff;
+  padding: 0;
+}
+
+.ngx-contextmenu ul {
+  padding: 0.5rem 0 !important;
+}
+
+.ngx-contextmenu a {
+  text-transform: none !important;
+  padding: 0.5rem 0.88rem !important;
+  color: #181818 !important;
+  background-color: #ffffff;
+}
+
+.ngx-contextmenu a:hover {
+  color: #fff !important;
+  background-color: #5dcfe3;
+}

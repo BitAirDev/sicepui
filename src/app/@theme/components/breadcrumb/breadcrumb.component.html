@@ -1,0 +1,9 @@
+<nb-card>
+  <nb-card-header>
+    <i class="menu-icon nb-home"></i><a [routerLink]="['/pages/configuration']" class="breadHomeElement">Inicio</a>
+    <div class="breadElement" *ngFor="let brd of data.breadcrumbs"> /
+      <a *ngIf="brd.modulo" [routerLink]="[brd.modulo, brd.id]">{{ brd.label }}</a> 
+      <span *ngIf="!brd.modulo">{{ brd.label }}</span>
+    </div>
+  </nb-card-header>
+</nb-card>

@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <span class="modal-header-warning">
+        <i class="fa fa-bomb"></i>
+        {{ modalHeader }}
+    </span>
+    <button class="close" aria-label="Close" (click)="activeModal.close('CANCEL')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    {{ modalContent }}
+</div>
+<div class="modal-footer">
+    <button class="btn btn-tn btn-danger" (click)="activeModal.close('OK')">Aceptar</button>
+    <button class="btn btn-tn btn-secondary" (click)="activeModal.close('CANCEL')">Cancelar</button>
+</div>

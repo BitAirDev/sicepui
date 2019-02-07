@@ -1,0 +1,12 @@
+<div class="picture-group" [ngClass]="{uploading: uploadInProgress}">
+  <div class="picture-wrapper" (click)="bringFileSelector();">
+    <label class="control-label required" for="input-displayName" *ngIf="!!!picture">Imagen</label>
+    <img [src]="picture" *ngIf="picture">
+  </div>
+  <i class="ion-ios-close-outline" (click)="removePicture();" *ngIf="picture && canDelete"></i>
+  <a href class="change-picture" (click)="bringFileSelector();" *ngIf="!!!picture">Agregar Imagen</a>
+  <input #fileUpload ngFileSelect [options]="options" [uploadInput]="uploadInput"
+    (change)="beforeUpload()" 
+    (uploadOutput)="onUploadOutput($event)"
+    type="file" hidden="true">
+</div>

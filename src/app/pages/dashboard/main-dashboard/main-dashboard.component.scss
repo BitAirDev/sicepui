@@ -1,0 +1,29 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+@include nb-install-component() {
+  ngx-dash-lateral {
+    width: 300px;
+    display: inline-block;
+    border-right: 2px solid #cbd8e6;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+  }
+  ngx-dash-body {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  nb-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0rem !important;
+  }
+  ngx-dash-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
